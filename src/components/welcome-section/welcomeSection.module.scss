@@ -1,0 +1,15 @@
+.welcome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13.02vw;
+    padding-bottom: 3.44vw;
+    height: 46.46vw;
+    box-sizing: border-box;
+    background-color: var(--black-bg-color);
+    border-bottom-left-radius: 31.25vw;
+    border-bottom-right-radius: 31.25vw;
+    overflow: clip;
+}

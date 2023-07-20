@@ -1,0 +1,32 @@
+@use '@/styles/variables.scss' as v;
+
+.header {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: var(--s-inline-padding);
+    background-color: rgba(v.$black-bg-color, .7);
+    backdrop-filter: blur(10px);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+    ._nav {
+        a {
+            color: var(--unfocus-color);
+
+            &:hover {
+                color: var(--white-bg-color);
+                text-shadow: 0 .42vw 16px var(--white-bg-color);
+            }
+        }
+
+        ul {
+            column-gap: 2.34vw;
+        }
+    }
+}
