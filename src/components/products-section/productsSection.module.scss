@@ -1,0 +1,10 @@
+.section {
+    padding-inline: var(--base-inline-padding);
+}
+
+.productsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.45vw;
+    row-gap: 2.29vw;
+}

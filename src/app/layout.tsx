@@ -1,4 +1,4 @@
-import './globals.css'
+import './globals.scss'
 import '@/styles/reset.css'
 import '@/styles/normalize.css'
 import '@/styles/variables.scss'

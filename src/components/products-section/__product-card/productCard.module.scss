@@ -1,0 +1,17 @@
+.title {
+    font-size: var(--m-font-size);
+    font-weight: 700;
+}
+
+.card {
+    width: 35.26vw;
+    height: 19.58vw;
+    padding: 1.41vw 1.77vw;
+    position: relative;
+
+    .img {
+        position: absolute;
+        right: -1.51vw;
+        bottom: -5.73vw;
+    }
+}
