@@ -1,5 +1,6 @@
 .section {
     padding-inline: var(--base-inline-padding);
+    margin-top: 5.21vw;
 }
 
 .productsList {
@@ -7,4 +8,8 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2.45vw;
     row-gap: 2.29vw;
+}
+
+.headerWrapper {
+    margin-bottom: 2.19vw;
 }

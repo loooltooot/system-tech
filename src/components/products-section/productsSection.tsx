@@ -26,7 +26,9 @@ const productCards: iProductCard[] = [
 export function ProductsSection() {
     return (
         <section id='products' className={styles.section}>
-            <SectionHeader title='делаем качественно' subtitle='quality' />
+            <div className={styles.headerWrapper}>
+                <SectionHeader title='делаем качественно' subtitle='quality' />
+            </div>
             <ul className={styles.productsList}>
                 {productCards.map((product, index) => (
                     <ProductCard key={index} title={product.title} description={product.description} img={product.img} bg={product.bg} />

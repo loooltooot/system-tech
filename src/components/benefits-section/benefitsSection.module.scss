@@ -1,0 +1,35 @@
+.benefits {
+    margin-top: 7.81vw;
+    background-color: var(--black-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: var(--base-inline-padding);
+    padding-top: 4vw;
+
+    * {
+        color: var(--white-bg-color);
+    }
+
+    span {
+        display: block;
+        font-weight: 700;
+    }
+
+    .bigNum {
+        font-size: 14em;
+        color: var(--green-color);
+
+        &+span {
+            font-size: var(--xl-font-size);
+            max-width: 42.71vw;
+            margin-bottom: .52vw;
+        }
+    }
+
+    .heroHeader {
+        display: flex;
+        align-items: center;
+        column-gap: 1.56vw;
+    }
+}
