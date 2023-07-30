@@ -2,7 +2,9 @@
     --black-bg-color: #000;
     --white-bg-color: #F9FFFF;
     --unfocus-color: #979797;
+    --text-shade-color: #404040;
     --green-color: #37DE6A;
+    --green-shade-color: #237C3E;
     --orange-color: #FFA040;
     --pink-color: #EB3B8B;
 
@@ -33,4 +35,9 @@ ul {
 
 a {
     text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.img-wrapper {
+    overflow: clip;
 }

@@ -1,0 +1,54 @@
+.selector {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        flex-direction: column;
+        row-gap: 2.6vw;
+
+        li {
+            cursor: pointer;
+        }
+
+        h3 {
+            font-size: var(--m-font-size);
+            font-weight: 700;
+            color: var(--green-shade-color);
+            transition: color .3s ease;
+            display: flex;
+            column-gap: .4vw;
+
+            &.active {
+                color: var(--green-color);
+
+                &+p {
+                    color: var(--white-bg-color);
+                }
+            }
+
+            svg {
+                margin-left: -2.34vw;
+                opacity: 0;
+                transition: opacity .3s ease, margin-left .3s ease;
+            }
+
+            svg.visible {
+                margin-left: -0.4vw;
+                opacity: 1;
+            }
+        }
+
+        p {
+            max-width: 26.67vw;
+            margin-top: .68vw;
+            color: var(--text-shade-color);
+            line-height: normal;
+            transition: color .3s ease;
+        }
+    }
+
+    img {
+        border-radius: 3.13vw;
+    }
+}
