@@ -41,3 +41,25 @@ a {
 .img-wrapper {
     overflow: clip;
 }
+
+::selection {
+    background-color: var(--green-color);
+    color: var(--black-bg-color);
+}
+
+::-moz-selection {
+    background-color: var(--green-color);
+    color: var(--black-bg-color);
+}
+
+::-webkit-scrollbar {
+    width: .5vw;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--black-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--green-color);
+}

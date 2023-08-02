@@ -1,3 +1,4 @@
+import { SlideInTop } from '@/motion/slideInTop/slideInTop'
 import { BenefitsSelector, iBenefit } from './__benefits-selector/benefitsSelector'
 import styles from './benefitsSection.module.scss'
 
@@ -22,11 +23,13 @@ const benefits: iBenefit[] = [
 export function BenefitsSection() {
     return (
         <section className={styles.benefits} id='benefits'>
-            <header className={styles.heroHeader}>
-                <h2 style={{ opacity: "0", position: "absolute", zIndex: "-1" }}>3 причины выбрать нас</h2>
-                <span className={styles.bigNum}>{benefits.length}</span>
-                <span>причины выбрать нас</span>
-            </header>
+            <SlideInTop>
+                <header className={styles.heroHeader}>
+                    <h2 style={{ opacity: "0", position: "absolute", zIndex: "-1" }}>3 причины выбрать нас</h2>
+                    <span className={styles.bigNum}>{benefits.length}</span>
+                    <span>причины выбрать нас</span>
+                </header>
+            </SlideInTop>
             <BenefitsSelector benefits={benefits} />
         </section>
     )

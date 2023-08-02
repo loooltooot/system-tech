@@ -1,3 +1,4 @@
+import { SlideInLeft } from '@/motion/slideInLeft/slideInLeft'
 import styles from './sectionHeader.module.scss'
 
 interface iSectionHeader {
@@ -8,7 +9,9 @@ interface iSectionHeader {
 export function SectionHeader({ title, subtitle }: iSectionHeader) {
     return (
         <header className={styles.header}>
-            <span>{subtitle}</span>
+            <SlideInLeft>
+                <span>{subtitle}</span>
+            </SlideInLeft>
             <h2>{title}</h2>
         </header>
     )

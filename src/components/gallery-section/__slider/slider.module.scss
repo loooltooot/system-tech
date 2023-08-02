@@ -1,0 +1,12 @@
+.slider {
+    margin-top: 2.19vw;
+    padding-inline: var(--base-inline-padding);
+
+    .slide {
+        transition: filter .3s ease;
+    }
+
+    :is(:global(.swiper-slide-prev), :global(.swiper-slide-next + div)) {
+        filter: brightness(.3);
+    }
+}
