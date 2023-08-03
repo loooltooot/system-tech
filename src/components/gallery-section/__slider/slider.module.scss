@@ -1,6 +1,17 @@
 .slider {
     margin-top: 2.19vw;
     padding-inline: var(--base-inline-padding);
+    --swiper-navigation-color: var(--white-bg-color);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:hover {
+        :is(:global(.swiper-button-prev), :global(.swiper-button-next)) {
+            opacity: 1;
+        }
+    }
 
     .slide {
         transition: filter .3s ease;
@@ -8,5 +19,11 @@
 
     :is(:global(.swiper-slide-prev), :global(.swiper-slide-next + div)) {
         filter: brightness(.3);
+    }
+
+    :is(:global(.swiper-button-prev), :global(.swiper-button-next)) {
+        transition: opacity .3s ease;
+        opacity: 0;
+        padding-inline: 3vw;
     }
 }
