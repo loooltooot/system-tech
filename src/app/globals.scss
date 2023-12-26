@@ -19,6 +19,25 @@
     --x-inline-padding: max(15vw, 100vw - 1560px);
 }
 
+@media screen and (max-width: 500px) {
+    :root {
+        --base-font-size: 12px;
+        --m-font-size: 1.5em;
+        --x-font-size: 2em;
+        --xl-font-size: 3em;
+    }
+
+    section,
+    header,
+    footer {
+        overflow: clip;
+    }
+}
+
+* {
+    font-size: var(--base-font-size);
+}
+
 img,
 svg,
 video {

@@ -2,7 +2,7 @@ import styles from './hero.module.scss'
 
 export default function Hero() {
     return (
-        <div>
+        <div className={styles.div}>
             <ul className={styles.ul}>
                 <li>
                     <span>B2B.</span>
