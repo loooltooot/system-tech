@@ -14,8 +14,9 @@
     --x-font-size: 3em;
     --xl-font-size: 6.13em;
 
-    --s-inline-padding: max(5vw, 100vw - 1860px);
+    --s-inline-padding: max(3vw, 100vw - 1860px);
     --base-inline-padding: max(10vw, 100vw - 1660px);
+    --x-inline-padding: max(15vw, 100vw - 1560px);
 }
 
 img,
@@ -23,6 +24,10 @@ svg,
 video {
     display: block;
     max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -35,7 +40,6 @@ ul {
 
 a {
     text-decoration: none;
-    scroll-behavior: smooth;
 }
 
 .img-wrapper {
