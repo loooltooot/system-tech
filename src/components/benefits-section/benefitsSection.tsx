@@ -27,7 +27,7 @@ export function BenefitsSection() {
                 <header className={styles.heroHeader}>
                     <h2 style={{ opacity: "0", position: "absolute", zIndex: "-1" }}>3 причины выбрать нас</h2>
                     <span className={styles.bigNum}>{benefits.length}</span>
-                    <span>причины выбрать нас</span>
+                    <span>причины <br />выбрать нас</span>
                 </header>
             </SlideInTop>
             <BenefitsSelector benefits={benefits} />

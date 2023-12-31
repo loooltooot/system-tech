@@ -26,4 +26,9 @@
         opacity: 0;
         padding-inline: 3vw;
     }
+
+    :global(.img-wrapper) img {
+        width: 35.89vw;
+        height: 23.91vw;
+    }
 }

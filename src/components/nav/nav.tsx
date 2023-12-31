@@ -3,7 +3,7 @@ import Link from "next/link"
 const navLinks = [
     { title: 'продукция', href: '#products' },
     { title: 'преимущества', href: '#benefits' },
-    { title: 'что-то', href: '#empty' },
+    { title: 'контакты', href: '#footer' },
 ]
 
 export default function Nav({ className }: { className?: string }) {
